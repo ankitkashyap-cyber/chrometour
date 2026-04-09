@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ChromeTour — Discover Incredible India</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="logo">🌍 ChromeTour</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn-nav">Book Now</a>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag">✈️ Trusted Travel Partner</p>
+      <h1>Discover the Beauty<br/>of <span>India</span></h1>
+      <p class="hero-sub">Handpicked hotel packages, scenic destinations & unforgettable experiences</p>
+      <div class="hero-btns">
+        <a href="packages.html" class="btn-primary">Explore Packages</a>
+        <a href="destinations.html" class="btn-outline">View Destinations</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><h3>500+</h3><p>Happy Travelers</p></div>
+      <div class="stat"><h3>60+</h3><p>Destinations</p></div>
+      <div class="stat"><h3>100+</h3><p>Hotel Partners</p></div>
+      <div class="stat"><h3>12+</h3><p>Years Experience</p></div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why-us">
+    <h2 class="section-title">Why Choose <span>ChromeTour?</span></h2>
+    <p class="section-sub">We craft journeys that stay with you forever</p>
+    <div class="features-grid">
+      <div class="feature-card"><i class="fas fa-hotel"></i><h3>Premium Hotels</h3><p>Handpicked luxury and heritage hotels for an exceptional stay</p></div>
+      <div class="feature-card"><i class="fas fa-rupee-sign"></i><h3>Best Prices</h3><p>Transparent pricing with no hidden charges, ever</p></div>
+      <div class="feature-card"><i class="fas fa-headset"></i><h3>24/7 Support</h3><p>Dedicated travel experts available round the clock</p></div>
+      <div class="feature-card"><i class="fas fa-shield-alt"></i><h3>Safe & Trusted</h3><p>Verified partners, secure bookings, worry-free travel</p></div>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section class="packages">
+    <h2 class="section-title">Our <span>Tour Packages</span></h2>
+    <p class="section-sub">All-inclusive packages crafted for every kind of traveler</p>
+    <div class="packages-grid">
+
+      <a href="package-taj-mahal.html" class="pkg-card">
+        <div class="pkg-img" style="background-image:url('https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600')">
+          <span class="pkg-badge">Popular</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Taj Mahal Tour</h3>
+          <p class="pkg-loc"><i class="fas fa-map-marker-alt"></i> Delhi • Agra • Jaipur</p>
+          <ul class="pkg-includes">
+            <li><i class="fas fa-check"></i> 5 Nights / 6 Days</li>
+            <li><i class="fas fa-check"></i> 3-Star Hotel Stay</li>
+            <li><i class="fas fa-check"></i> AC Transport & Guide</li>
+          </ul>
+          <div class="pkg-footer">
+            <div class="pkg-price">₹12,999 <span>/person</span></div>
+            <span class="btn-book">View Details</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="package-kerala.html" class="pkg-card">
+        <div class="pkg-img" style="background-image:url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600')">
+          <span class="pkg-badge hot">Hot Deal</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Kerala Backwaters</h3>
+          <p class="pkg-loc"><i class="fas fa-map-marker-alt"></i> Kochi • Munnar • Alleppey</p>
+          <ul class="pkg-includes">
+            <li><i class="fas fa-check"></i> 4 Nights / 5 Days</li>
+            <li><i class="fas fa-check"></i> Resort + Houseboat</li>
+            <li><i class="fas fa-check"></i> All Meals Included</li>
+          </ul>
+          <div class="pkg-footer">
+            <div class="pkg-price">₹15,499 <span>/person</span></div>
+            <span class="btn-book">View Details</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="package-himachal.html" class="pkg-card">
+        <div class="pkg-img" style="background-image:url('https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600')">
+          <span class="pkg-badge">Adventure</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Himachal Adventure</h3>
+          <p class="pkg-loc"><i class="fas fa-map-marker-alt"></i> Shimla • Manali • Kasol</p>
+          <ul class="pkg-includes">
+            <li><i class="fas fa-check"></i> 6 Nights / 7 Days</li>
+            <li><i class="fas fa-check"></i> Hotel + Camp Stay</li>
+            <li><i class="fas fa-check"></i> Trekking Included</li>
+          </ul>
+          <div class="pkg-footer">
+            <div class="pkg-price">₹18,999 <span>/person</span></div>
+            <span class="btn-book">View Details</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="package-indiagate.html" class="pkg-card">
+        <div class="pkg-img" style="background-image:url('https://images.unsplash.com/photo-1587474260584-136574528ed5?w=600')">
+          <span class="pkg-badge">Budget</span>
+        </div>
+        <div class="pkg-body">
+          <h3>India Gate Tour</h3>
+          <p class="pkg-loc"><i class="fas fa-map-marker-alt"></i> Delhi • Connaught Place</p>
+          <ul class="pkg-includes">
+            <li><i class="fas fa-check"></i> 3 Nights / 4 Days</li>
+            <li><i class="fas fa-check"></i> 3-Star Hotel</li>
+            <li><i class="fas fa-check"></i> City Tour & Guide</li>
+          </ul>
+          <div class="pkg-footer">
+            <div class="pkg-price">₹9,999 <span>/person</span></div>
+            <span class="btn-book">View Details</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="package-rajasthan.html" class="pkg-card">
+        <div class="pkg-img" style="background-image:url('https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600')">
+          <span class="pkg-badge hot">Hot Deal</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Rajasthan Royal Tour</h3>
+          <p class="pkg-loc"><i class="fas fa-map-marker-alt"></i> Jaipur • Jodhpur • Udaipur</p>
+          <ul class="pkg-includes">
+            <li><i class="fas fa-check"></i> 7 Nights / 8 Days</li>
+            <li><i class="fas fa-check"></i> Heritage Hotel Stay</li>
+            <li><i class="fas fa-check"></i> Camel Safari + All Meals</li>
+          </ul>
+          <div class="pkg-footer">
+            <div class="pkg-price">₹22,999 <span>/person</span></div>
+            <span class="btn-book">View Details</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="package-chardham.html" class="pkg-card">
+        <div class="pkg-img" style="background-image:url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600')">
+          <span class="pkg-badge spiritual">Spiritual</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Char Dham Yatra</h3>
+          <p class="pkg-loc"><i class="fas fa-map-marker-alt"></i> Uttarakhand</p>
+          <ul class="pkg-includes">
+            <li><i class="fas fa-check"></i> 10 Nights / 11 Days</li>
+            <li><i class="fas fa-check"></i> Dharamshala + Hotel</li>
+            <li><i class="fas fa-check"></i> Puja + All Meals</li>
+          </ul>
+          <div class="pkg-footer">
+            <div class="pkg-price">₹25,999 <span>/person</span></div>
+            <span class="btn-book">View Details</span>
+          </div>
+        </div>
+      </a>
+
+
+
+    </div>
+  </section>
+
+  <!-- DESTINATIONS -->
+  <section class="destinations">
+    <h2 class="section-title">Top <span>Destinations</span></h2>
+    <p class="section-sub">India's most breathtaking places, waiting to be discovered</p>
+    <div class="dest-grid">
+      <a href="dest-tajmahal.html" class="dest-card" style="background-image:url('https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600')">
+        <div class="dest-overlay"><h3>Taj Mahal</h3><p>15 Packages</p></div>
+      </a>
+      <a href="dest-kerala.html" class="dest-card" style="background-image:url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600')">
+        <div class="dest-overlay"><h3>Kerala</h3><p>12 Packages</p></div>
+      </a>
+      <a href="dest-himachal.html" class="dest-card" style="background-image:url('https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600')">
+        <div class="dest-overlay"><h3>Himachal Pradesh</h3><p>18 Packages</p></div>
+      </a>
+      <a href="dest-indiagate.html" class="dest-card" style="background-image:url('https://images.unsplash.com/photo-1587474260584-136574528ed5?w=600')">
+        <div class="dest-overlay"><h3>India Gate</h3><p>8 Packages</p></div>
+      </a>
+      <a href="dest-uttarakhand.html" class="dest-card" style="background-image:url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600')">
+        <div class="dest-overlay"><h3>Uttarakhand</h3><p>20 Packages</p></div>
+      </a>
+      <a href="dest-tamilnadu.html" class="dest-card" style="background-image:url('https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600')">
+        <div class="dest-overlay"><h3>Tamil Nadu</h3><p>10 Packages</p></div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <h2 class="section-title">What Our <span>Travelers Say</span></h2>
+    <p class="section-sub">Real experiences from our valued guests</p>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>The Rajasthan tour was perfectly organized. Heritage hotels were magnificent and the guide was incredibly knowledgeable. A royal experience indeed.</p>
+        <div class="testi-author"><strong>Rahul Sharma</strong>Delhi, India</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>Kerala backwaters trip was a dream come true. The houseboat stay was magical. ChromeTour handled every detail flawlessly. Highly recommended.</p>
+        <div class="testi-author"><strong>Priya Mehta</strong>Mumbai, India</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>Kashmir was absolutely breathtaking. The shikara ride on Dal Lake at sunset is something I will never forget. Thank you ChromeTour for this memory.</p>
+        <div class="testi-author"><strong>Amit Verma</strong>Jaipur, India</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <div class="contact-left">
+      <h2>Plan Your <span>Dream Trip</span></h2>
+      <p>Our travel experts will craft a personalized itinerary just for you. Fill the form and we'll call you within 24 hours.</p>
+      <div class="contact-info">
+        <p><i class="fas fa-phone"></i> +91 99394 28346</p>
+        <p><i class="fas fa-envelope"></i> info@chrometour.com</p>
+        <p><i class="fas fa-globe"></i> chrometour.com</p>
+        <p><i class="fas fa-clock"></i> Mon – Sat: 9AM to 7PM</p>
+      </div>
+    </div>
+    <form class="contact-form" onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Full Name" required/>
+      <input type="tel" placeholder="Phone Number" required/>
+      <input type="email" placeholder="Email Address"/>
+      <select required>
+        <option value="" disabled selected>Select Package</option>
+        <option>Taj Mahal Tour</option>
+        <option>Kerala Backwaters</option>
+        <option>Himachal Adventure</option>
+        <option>India Gate Tour</option>
+        <option>Rajasthan Royal Tour</option>
+        <option>Char Dham Yatra</option>
+        <option>Other</option>
+      </select>
+      <select>
+        <option value="" disabled selected>Number of Travelers</option>
+        <option>1 – 2</option>
+        <option>3 – 5</option>
+        <option>6 – 10</option>
+        <option>10+</option>
+      </select>
+      <textarea placeholder="Any special requirements or questions?" rows="3"></textarea>
+      <button type="submit" class="btn-submit">Send Enquiry &nbsp; <i class="fas fa-paper-plane"></i></button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3>🌍 ChromeTour</h3>
+        <p>Your trusted travel partner for exploring the incredible beauty of India since 2012.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigate</h4>
+        <a href="index.html">Home</a>
+        <a href="packages.html">Packages</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4>Popular Tours</h4>
+        <a href="package-taj-mahal.html">Taj Mahal Tour</a>
+        <a href="package-kerala.html">Kerala Backwaters</a>
+        <a href="package-kashmir.html">Kashmir Tour</a>
+        <a href="package-chardham.html">Char Dham Yatra</a>
+      </div>
+      <div class="footer-links">
+        <h4>Get in Touch</h4>
+        <p>+91 99394 28346</p>
+        <p>info@chrometour.com</p>
+        <p>chrometour.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 ChromeTour. All rights reserved. &nbsp;|&nbsp; Crafted with ♥ for India</div>
+  </footer>
+
+  <div class="toast" id="toast">✅ Enquiry sent! We'll call you soon.</div>
+  <script src="script.js"></script>
+</body>
+</html>
