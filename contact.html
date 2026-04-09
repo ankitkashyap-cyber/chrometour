@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - ChromeTour</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">🌍 ChromeTour</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn-nav">Book Now</a>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1>Contact <span style="color:#f5a623">Us</span></h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> / Contact</p>
+    </div>
+  </div>
+
+  <section class="contact" style="margin-top:0">
+    <div class="contact-left">
+      <h2>Plan Your <span>Dream Trip</span></h2>
+      <p>Fill the form and our travel expert will call you within 24 hours</p>
+      <div class="contact-info">
+        <p><i class="fas fa-phone"></i> +91 99394 28346</p>
+        <p><i class="fas fa-envelope"></i> info@chrometour.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> chrometour.com</p>
+        <p><i class="fas fa-clock"></i> Mon - Sat: 9AM - 7PM</p>
+      </div>
+    </div>
+    <form class="contact-form" onsubmit="submitForm(event)">
+      <input type="text" id="nameField" placeholder="Your Name" required/>
+      <input type="tel" placeholder="Phone Number" required/>
+      <input type="email" placeholder="Email Address"/>
+      <select id="pkgSelect" required>
+        <option value="" disabled selected>Select Package</option>
+        <option>Taj Mahal Tour</option>
+        <option>Kerala Backwaters</option>
+        <option>Himachal Adventure</option>
+        <option>India Gate Tour</option>
+        <option>Rajasthan Royal Tour</option>
+        <option>Char Dham Yatra</option>
+        <option>Other</option>
+      </select>
+      <select>
+        <option value="" disabled selected>Number of Travelers</option>
+        <option>1-2</option>
+        <option>3-5</option>
+        <option>6-10</option>
+        <option>10+</option>
+      </select>
+      <textarea placeholder="Any special requirements?" rows="3"></textarea>
+      <button type="submit" class="btn-submit">Send Enquiry <i class="fas fa-paper-plane"></i></button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand"><h3>🌍 ChromeTour</h3><p>Your trusted travel partner for exploring the incredible beauty of India.</p></div>
+      <div class="footer-links"><h4>Quick Links</h4><a href="index.html">Home</a><a href="packages.html">Packages</a><a href="destinations.html">Destinations</a><a href="contact.html">Contact</a></div>
+      <div class="footer-links"><h4>Popular Tours</h4><a href="package-taj-mahal.html">Taj Mahal Tour</a><a href="package-kerala.html">Kerala Backwaters</a><a href="package-himachal.html">Himachal Adventure</a><a href="package-chardham.html">Char Dham Yatra</a></div>
+      <div class="footer-links"><h4>Contact</h4><p>+91 99394 28346</p><p>info@chrometour.com</p><p>chrometour.com</p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 ChromeTour. All rights reserved.</p></div>
+  </footer>
+
+  <div class="toast" id="toast">✅ Enquiry sent! We'll call you soon.</div>
+  <script src="script.js"></script>
+  <script>
+    // Auto-select package from URL param
+    const params = new URLSearchParams(window.location.search);
+    const pkg = params.get('pkg');
+    if (pkg) {
+      const sel = document.getElementById('pkgSelect');
+      for (let opt of sel.options) {
+        if (opt.value === pkg) { opt.selected = true; break; }
+      }
+    }
+  </script>
+</body>
+</html>
