@@ -241,10 +241,10 @@
       </div>
     </div>
     <form class="contact-form" action="https://formspree.io/f/xojpznje" method="POST">
-      <input type="text" placeholder="Your Full Name" required/>
-      <input type="tel" placeholder="Phone Number" required/>
-      <input type="email" placeholder="Email Address"/>
-      <select required>
+      <input type="text" name="name" placeholder="Your Full Name" required/>
+      <input type="tel" "tel" name="phone" placeholder="Phone Number" required/>
+      <input type="email" name="email" placeholder="Email Address"/>
+      <select name="package" required>
         <option value="" disabled selected>Select Package</option>
         <option>Taj Mahal Tour</option>
         <option>Kerala Backwaters</option>
@@ -254,14 +254,14 @@
         <option>Char Dham Yatra</option>
         <option>Other</option>
       </select>
-      <select>
+      <select name="travelers">
         <option value="" disabled selected>Number of Travelers</option>
         <option>1 – 2</option>
         <option>3 – 5</option>
         <option>6 – 10</option>
         <option>10+</option>
       </select>
-      <textarea placeholder="Any special requirements or questions?" rows="3"></textarea>
+      <textarea name="message" placeholder="Any special requirements or questions?" rows="3"></textarea>
       <button type="submit" class="btn-submit">Send Enquiry &nbsp; <i class="fas fa-paper-plane"></i></button>
     </form>
   </section>
